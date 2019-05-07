@@ -1,0 +1,76 @@
+body {
+  font-family: $font-main;
+  color: $color-grey;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  font-size: 2rem;
+}
+
+%heading__header {
+  color: $color-white !important;
+}
+
+.heading__primary {
+  color: $color-main;
+  text-transform: uppercase;
+  font-family: $font-titles;
+  font-size: 5rem;
+
+  &--nav {
+    font-size: 4rem;
+  }
+
+  &--header {
+    color: $color-grey;
+  }
+
+  &--footer {
+    color: $color-grey;
+    font-size: 1.5rem;
+    text-transform: none;
+  }
+}
+
+.heading__secondary {
+  color: $color-grey;
+  font-family: $font-subtitles;
+  font-size: 6rem;
+  font-weight: 300;
+
+  &--nav {
+    font-size: 2.5rem;
+  }
+
+  &--header-1 {
+    @extend %heading__header;
+    font-size: 2.8rem;
+  }
+
+  &--header-2 {
+    @extend %heading__header;
+    font-size: 4.8rem;
+  }
+
+  &--insta {
+    font-size: 3.5rem;
+  }
+}
+
+.navigation__item {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.text__eng {
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: $font-titles;
+  color: $color-white;
+  font-weight: 300;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  font-size: 1.8rem;
+}

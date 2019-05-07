@@ -1,0 +1,74 @@
+.header {
+  &__picture {
+    background-color: $color-main;
+    grid-column: full-start / col-end 7;
+  }
+
+  &__presentation {
+    background-color: $color-main;
+    grid-column: col-start 8 / full-end;
+
+    padding: 6rem 8vw;
+
+    display: grid;
+    //align-content: center;
+  }
+}
+
+.about {
+  &__pictures {
+    background-color: $color-white;
+    grid-column: full-start / col-end 7;
+  }
+
+  &__content {
+    background-color: $color-white;
+    grid-column: col-start 8 / full-end;
+  }
+}
+
+.education {
+  grid-column: center-start / center-end;
+}
+
+.portfolio {
+  background-color: $color-white;
+  grid-column: full-start / full-end;
+}
+
+.skills {
+  grid-column: center-start / center-end;
+}
+
+.resume {
+  &__content {
+    background-color: $color-white;
+    grid-column: full-start / col-end 7;
+  }
+
+  &__picture {
+    background-color: $color-white;
+    grid-column: col-start 8 / full-end;
+  }
+}
+
+.contact {
+  background-color: $color-secondary;
+  grid-column: full-start / full-end;
+}
+
+.instagram__contact {
+  background-color: $color-insta;
+  grid-column: full-start / full-end;
+}
+
+.instagram {
+  background-color: $color-insta;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 9vw);
+  grid-gap: 1.5rem;
+  padding: 1.5rem;
+}

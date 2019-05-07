@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #E3E7F1; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #323F4B;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  font-size: 2rem; }
+
+.heading__secondary--header-1, .heading__secondary--header-2 {
+  color: #FAFAFA !important; }
+
+.heading__primary {
+  color: #8774AA;
+  text-transform: uppercase;
+  font-family: "Rufina", serif;
+  font-size: 5rem; }
+  .heading__primary--nav {
+    font-size: 4rem; }
+  .heading__primary--header {
+    color: #323F4B; }
+  .heading__primary--footer {
+    color: #323F4B;
+    font-size: 1.5rem;
+    text-transform: none; }
+
+.heading__secondary {
+  color: #323F4B;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 6rem;
+  font-weight: 300; }
+  .heading__secondary--nav {
+    font-size: 2.5rem; }
+  .heading__secondary--header-1 {
+    font-size: 2.8rem; }
+  .heading__secondary--header-2 {
+    font-size: 4.8rem; }
+  .heading__secondary--insta {
+    font-size: 3.5rem; }
+
+.navigation__item {
+  text-transform: uppercase;
+  font-size: 1.3rem; }
+
+.text__eng {
+  text-transform: uppercase; }
+
+.btn {
+  font-family: "Rufina", serif;
+  color: #FAFAFA;
+  font-weight: 300;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  font-size: 1.8rem; }
+
+.instagram__item--1 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2; }
+
+.instagram__item--2 {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 2; }
+
+.instagram__item--3 {
+  grid-row: 1 / 2;
+  grid-column: 4 / span 2; }
+
+.instagram__item--4 {
+  grid-row: 1 / 2;
+  grid-column: 6 / 7; }
+
+.instagram__item--5 {
+  grid-row: 1 / 2;
+  grid-column: 7 / span 2; }
+
+.instagram__item--6 {
+  grid-row: 1 / span 2;
+  grid-column: 9 / 10; }
+
+.instagram__item--7 {
+  grid-row: 2 / span 2;
+  grid-column: 1 / 2; }
+
+.instagram__item--8 {
+  grid-row: 3 / 4;
+  grid-column: 2 / span 2; }
+
+.instagram__item--9 {
+  grid-row: 2 / span 2;
+  grid-column: 4 / 5; }
+
+.instagram__item--10 {
+  grid-row: 2 / span 2;
+  grid-column: 5 / span 3; }
+
+.instagram__item--11 {
+  grid-row: 2 / 3;
+  grid-column: 8 / 9; }
+
+.instagram__item--12 {
+  grid-row: 3 / 4;
+  grid-column: 8 / span 2; }
+
+.instagram__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; }
+
+.footer {
+  background-color: #8774AA;
+  grid-column: full-start / full-end; }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 80vh 40vw repeat(3, min-content) 40vw repeat(4, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.navigation {
+  background-color: #FAFAFA;
+  grid-column: full-start / full-end; }
+  .navigation__logos {
+    background-color: #B39DDB; }
+  .navigation__logo {
+    fill: #FAFAFA;
+    width: 2rem;
+    height: 2rem; }
+  .navigation__list {
+    list-style: none;
+    display: grid; }
+
+.header__picture {
+  background-color: #8774AA;
+  grid-column: full-start / col-end 7; }
+
+.header__presentation {
+  background-color: #8774AA;
+  grid-column: col-start 8 / full-end;
+  padding: 6rem 8vw;
+  display: grid; }
+
+.about__pictures {
+  background-color: #FAFAFA;
+  grid-column: full-start / col-end 7; }
+
+.about__content {
+  background-color: #FAFAFA;
+  grid-column: col-start 8 / full-end; }
+
+.education {
+  grid-column: center-start / center-end; }
+
+.portfolio {
+  background-color: #FAFAFA;
+  grid-column: full-start / full-end; }
+
+.skills {
+  grid-column: center-start / center-end; }
+
+.resume__content {
+  background-color: #FAFAFA;
+  grid-column: full-start / col-end 7; }
+
+.resume__picture {
+  background-color: #FAFAFA;
+  grid-column: col-start 8 / full-end; }
+
+.contact {
+  background-color: #7B61AA;
+  grid-column: full-start / full-end; }
+
+.instagram__contact {
+  background-color: #604B88;
+  grid-column: full-start / full-end; }
+
+.instagram {
+  background-color: #604B88;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(3, 9vw);
+  grid-gap: 1.5rem;
+  padding: 1.5rem; }
