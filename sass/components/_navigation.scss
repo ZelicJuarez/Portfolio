@@ -1,0 +1,39 @@
+.navigation {
+  &__logos {
+    background-color: $color-main-light;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem 1.5rem;
+  }
+
+  &__logo {
+    fill: $color-white;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-content: center;
+    padding: 1.5rem;
+    grid-gap: 6rem;
+    justify-content: center;
+
+    //display: grid;
+    //grid-template-columns: repeat(auto-fit, 1fr);
+  }
+
+  &__name {
+    justify-self: center;
+    display: grid;
+    position: relative;
+
+    .heading__secondary--nav {
+        position: absolute;
+        top: 1.2rem;
+        left: 3rem;
+    }
+  }
+}

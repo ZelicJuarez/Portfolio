@@ -2,19 +2,9 @@
   background-color: $color-white;
   grid-column: full-start / full-end;
 
-  &__logos {
-    background-color: $color-main-light;
-  }
-
-  &__logo {
-    fill: $color-white;
-    width: 2rem;
-    height: 2rem;
-  }
-
-  &__list {
-    list-style: none;
-
-    display: grid;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-gap: 2rem;
 }
+
+

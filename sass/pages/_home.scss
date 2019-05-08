@@ -11,6 +11,13 @@
     padding: 6rem 8vw;
 
     display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content);
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 3rem;
+    padding: 3rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     //align-content: center;
   }
 }
@@ -60,6 +67,9 @@
 .instagram__contact {
   background-color: $color-insta;
   grid-column: full-start / full-end;
+
+  display: grid;
+  justify-content: center;
 }
 
 .instagram {

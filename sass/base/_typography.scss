@@ -40,6 +40,7 @@ body {
 
   &--nav {
     font-size: 2.5rem;
+    
   }
 
   &--header-1 {
@@ -54,6 +55,7 @@ body {
 
   &--insta {
     font-size: 3.5rem;
+    padding-top: 1rem;
   }
 }
 
@@ -73,4 +75,8 @@ body {
   /*font-size: 16px;*/
   line-height: 1.7;
   font-size: 1.8rem;
+}
+
+.decoration {
+  font-family: $font-subtitles;
 }

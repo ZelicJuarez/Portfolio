@@ -34,8 +34,10 @@
         <li class="navigation__item">Skills</li>
       </ul>
 
-      <span class="heading__primary heading__primary--nav">Zelic</span>
-      <span class="heading__secondary heading__secondary--nav">Zelic</span>
+      <div class="navigation__name">
+        <span class="heading__primary heading__primary--nav">Zelic</span>
+        <span class="heading__secondary heading__secondary--nav">Zelic</span>
+      </div>
 
       <ul class="navigation__list">
         <li class="navigation__item">Portfolio</li>
@@ -55,15 +57,19 @@
     </header>
 
     <div class="header__presentation">
-      <h1 class="heading__primary heading__primary--header">Hello</h1>
-      <span class="heading__secondary heading__secondary--header-1"
-        >I am Zelic Juarez</span
-      >
-      <div>
-        <span>{</span>
-        <span class="text__eng">Computer Engineer</span>
-        <span>}</span>
+      <div class="header__intro">
+        <h1 class="heading__primary heading__primary--header">Hello</h1>
+        <span class="heading__secondary heading__secondary--header-1">
+          I am Zelic Juarez
+        </span>
       </div>
+
+      <div class="header__eng">
+        <span class="decoration">{</span>
+        <span class="text__eng">Computer Engineer</span>
+        <span class="decoration">}</span>
+      </div>
+
       <span class="heading__secondary heading__secondary--header-2"
         >Let's work together</span
       >
@@ -72,8 +78,10 @@
     <div class="about__pictures">About</div>
 
     <div class="about__content">
-      <h1 class="heading__primary">About me</h1>
-      <h2 class="heading__secondary">lifestyle</h2>
+      <div class="about__title">
+        <h1 class="heading__primary">About me</h1>
+        <h2 class="heading__secondary">lifestyle</h2>
+      </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
         tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim
@@ -83,8 +91,10 @@
     </div>
 
     <div class="education">
-      <h1 class="heading__primary">Education</h1>
-      <h2 class="heading__secondary">history</h2>
+      <div class="education__title">
+        <h1 class="heading__primary">Education</h1>
+        <h2 class="heading__secondary">history</h2>
+      </div>
       <span>&bull; Lorem ipsum dolor</span>
       <span
         >Sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt
@@ -103,8 +113,11 @@
     </div>
 
     <section class="portfolio">
-      <h1 class="heading__primary">Portfolio</h1>
-      <h2 class="heading__secondary">work</h2>
+      <div class="portfolio__title">
+        <h1 class="heading__primary">Portfolio</h1>
+        <h2 class="heading__secondary">work</h2>
+      </div>
+      
     </section>
 
     <section class="skills">
@@ -236,7 +249,11 @@
       <span class="heading__primary heading__primary--footer"
         >&copy; 2019 Zelic Juarez</span
       >
-      <button class="btn__up">Arrow up</button>
+      <button class="btn__up">
+        <svg class="footer__logo">
+          <use xlink:href="img/icons.svg#icon-chevron-up"></use>
+        </svg>
+      </button>
     </footer>
   </body>
 </html>

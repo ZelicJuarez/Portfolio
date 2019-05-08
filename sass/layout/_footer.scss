@@ -2,6 +2,11 @@
     background-color: $color-main;
     grid-column: full-start / full-end;
 
-    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    padding: 3rem;
+    align-items: center;
+
 }
 

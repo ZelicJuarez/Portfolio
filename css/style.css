@@ -49,7 +49,8 @@ body {
   .heading__secondary--header-2 {
     font-size: 4.8rem; }
   .heading__secondary--insta {
-    font-size: 3.5rem; }
+    font-size: 3.5rem;
+    padding-top: 1rem; }
 
 .navigation__item {
   text-transform: uppercase;
@@ -66,6 +67,50 @@ body {
   line-height: 1.7;
   font-size: 1.8rem; }
 
+.decoration {
+  font-family: "Cedarville Cursive", cursive; }
+
+.btn__up {
+  justify-self: end;
+  border-radius: 50%;
+  background-color: #B39DDB;
+  border: none;
+  margin-right: 5rem; }
+
+.heading__primary--footer {
+  grid-column: 2/3; }
+
+.footer__logo {
+  fill: #323F4B;
+  width: 4rem;
+  height: 4rem; }
+
+.header__intro {
+  position: relative; }
+
+.header__eng {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  align-items: center;
+  grid-gap: 1rem; }
+  .header__eng .decoration {
+    font-size: 6rem; }
+  .header__eng .text__eng {
+    padding-bottom: 2rem; }
+
+.header__img {
+  width: 100%; }
+
+.heading__primary--header {
+  grid-row: 1 / 2; }
+
+.heading__secondary--header-1 {
+  position: absolute;
+  top: 3.2rem; }
+
+/* .heading__primary--header {
+  grid-row: 1 / 2;
+} */
 .instagram__item--1 {
   grid-row: 1 / 2;
   grid-column: 1 / 2; }
@@ -120,9 +165,43 @@ body {
   object-fit: cover;
   display: block; }
 
+.navigation__logos {
+  background-color: #B39DDB;
+  justify-self: center;
+  align-self: center;
+  padding: 1rem 1.5rem; }
+
+.navigation__logo {
+  fill: #FAFAFA;
+  width: 2rem;
+  height: 2rem; }
+
+.navigation__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  align-content: center;
+  padding: 1.5rem;
+  grid-gap: 6rem;
+  justify-content: center; }
+
+.navigation__name {
+  justify-self: center;
+  display: grid;
+  position: relative; }
+  .navigation__name .heading__secondary--nav {
+    position: absolute;
+    top: 1.2rem;
+    left: 3rem; }
+
 .footer {
   background-color: #8774AA;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  padding: 3rem;
+  align-items: center; }
 
 .container {
   display: grid;
@@ -131,16 +210,10 @@ body {
 
 .navigation {
   background-color: #FAFAFA;
-  grid-column: full-start / full-end; }
-  .navigation__logos {
-    background-color: #B39DDB; }
-  .navigation__logo {
-    fill: #FAFAFA;
-    width: 2rem;
-    height: 2rem; }
-  .navigation__list {
-    list-style: none;
-    display: grid; }
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-gap: 2rem; }
 
 .header__picture {
   background-color: #8774AA;
@@ -150,7 +223,14 @@ body {
   background-color: #8774AA;
   grid-column: col-start 8 / full-end;
   padding: 6rem 8vw;
-  display: grid; }
+  display: grid;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content);
+  grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 3rem;
+  padding: 3rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
 
 .about__pictures {
   background-color: #FAFAFA;
@@ -184,7 +264,9 @@ body {
 
 .instagram__contact {
   background-color: #604B88;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  display: grid;
+  justify-content: center; }
 
 .instagram {
   background-color: #604B88;
