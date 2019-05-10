@@ -1,0 +1,26 @@
+.about {
+    &__content {
+        display: grid;
+        padding: 6rem 6vw;
+        align-content: center;
+    }
+
+    &__title {
+        position: relative;
+        text-align: center;
+
+    }
+
+    &__text {
+        text-align: center;
+    }
+}
+
+.heading {
+    &__secondary {
+        &--about {
+            top: 1rem;
+            left: 13.2rem;
+        }
+    }
+}

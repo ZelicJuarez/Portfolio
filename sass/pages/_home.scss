@@ -45,6 +45,12 @@
 
 .skills {
   grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: min-content repeat(2, 16vw);
+  grid-column-gap: 4rem;
+  padding: 6rem 0;
+  grid-row-gap: 6rem;
 }
 
 .resume {
@@ -60,12 +66,13 @@
 }
 
 .contact {
-  background-color: $color-secondary;
+  background-color: rgba($color-secondary, 0.7);
   grid-column: full-start / full-end;
+  margin-bottom: 2rem;
 }
 
 .instagram__contact {
-  background-color: $color-insta;
+  background-color: rgba($color-insta, 0.5);
   grid-column: full-start / full-end;
 
   display: grid;
@@ -73,7 +80,7 @@
 }
 
 .instagram {
-  background-color: $color-insta;
+  background-color: rgba($color-insta, 0.5);
   grid-column: full-start / full-end;
 
   display: grid;

@@ -1,16 +1,17 @@
 .header {
   &__intro {
     position: relative;
+    width: 80%;
   }
 
   &__eng {
     display: grid;
-    grid-template-columns: repeat(3,max-content);
+    grid-template-columns: repeat(3, max-content);
     align-items: center;
     grid-gap: 1rem;
 
     .decoration {
-        font-size: 6rem;
+      font-size: 6rem;
     }
 
     .text__eng {
@@ -20,6 +21,9 @@
 
   &__img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 }
 
@@ -27,13 +31,15 @@
   &__primary {
     &--header {
       grid-row: 1 / 2;
+      text-align: center;
     }
   }
 
   &__secondary {
     &--header-1 {
-      position: absolute;
-      top: 3.2rem;
+      //position: absolute;
+      top: 3.8rem;
+      left: 3.2rem;
     }
   }
 }

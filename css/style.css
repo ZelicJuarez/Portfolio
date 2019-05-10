@@ -70,12 +70,83 @@ body {
 .decoration {
   font-family: "Cedarville Cursive", cursive; }
 
+.cursive {
+  position: absolute; }
+
+.title__margin {
+  margin-bottom: 6rem; }
+
+.about__content {
+  display: grid;
+  padding: 6rem 6vw;
+  align-content: center; }
+
+.about__title {
+  position: relative;
+  text-align: center; }
+
+.about__text {
+  text-align: center; }
+
+.heading__secondary--about {
+  top: 1rem;
+  left: 13.2rem; }
+
+.btn__contact {
+  background-color: transparent;
+  border-radius: 1rem;
+  padding: 0.5rem 2.5rem;
+  border-color: #FAFAFA;
+  border-width: 0.2rem;
+  transition: all 0.2s; }
+  .btn__contact:hover {
+    background-color: rgba(50, 63, 75, 0.4);
+    transform: scale(1.1); }
+
 .btn__up {
   justify-self: end;
   border-radius: 50%;
   background-color: #B39DDB;
   border: none;
-  margin-right: 5rem; }
+  margin-right: 5rem;
+  transition: all 0.2s; }
+  .btn__up:hover {
+    background-color: rgba(50, 63, 75, 0.4);
+    transform: scale(1.5); }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  padding: 2rem 0 4rem 0; }
+  .contact__content {
+    grid-column: 1/2;
+    background-color: rgba(50, 63, 75, 0.4);
+    padding: 6rem 3rem 2rem 22vw; }
+  .contact__text {
+    color: #FAFAFA;
+    text-align: center; }
+  .contact__button-box {
+    background-color: rgba(123, 97, 170, 0.7);
+    display: grid;
+    align-content: center;
+    justify-content: center; }
+
+.heading__secondary--contact {
+  position: absolute;
+  left: 3rem;
+  transform: skewY(-23deg);
+  top: -1.5rem; }
+
+.education {
+  padding: 6rem 0; }
+  .education__title {
+    text-align: center;
+    position: relative; }
+
+.heading__secondary--education {
+  top: 1rem;
+  left: 41.8%; }
 
 .heading__primary--footer {
   grid-column: 2/3; }
@@ -86,7 +157,8 @@ body {
   height: 4rem; }
 
 .header__intro {
-  position: relative; }
+  position: relative;
+  width: 80%; }
 
 .header__eng {
   display: grid;
@@ -99,14 +171,18 @@ body {
     padding-bottom: 2rem; }
 
 .header__img {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; }
 
 .heading__primary--header {
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  text-align: center; }
 
 .heading__secondary--header-1 {
-  position: absolute;
-  top: 3.2rem; }
+  top: 3.8rem;
+  left: 3.2rem; }
 
 /* .heading__primary--header {
   grid-row: 1 / 2;
@@ -190,9 +266,46 @@ body {
   display: grid;
   position: relative; }
   .navigation__name .heading__secondary--nav {
-    position: absolute;
     top: 1.2rem;
     left: 3rem; }
+
+.skills__item {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-image: linear-gradient(to right bottom, #9575CD, #3F3257);
+  /* &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        } */ }
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    .skills__item {
+      -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } }
+  .skills__item--1 {
+    grid-row: 2/3;
+    grid-column: 1 / span 2; }
+  .skills__item--2 {
+    grid-column: 5 / span 2; }
+  .skills__item--3 {
+    grid-column: 7 / span 2; }
+  .skills__item--4 {
+    grid-column: 9 / span 2; }
+  .skills__item--5 {
+    grid-column: 2 / span 2; }
+  .skills__item--6 {
+    grid-column: 4 / span 2; }
+  .skills__item--7 {
+    grid-column: 6 / span 2; }
+  .skills__item--8 {
+    grid-column: 8 / span 2; }
+
+.heading__secondary--skills {
+  display: grid;
+  justify-content: center;
+  grid-column: 1 / -1; }
 
 .footer {
   background-color: #8774AA;
@@ -248,7 +361,13 @@ body {
   grid-column: full-start / full-end; }
 
 .skills {
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: min-content repeat(2, 16vw);
+  grid-column-gap: 4rem;
+  padding: 6rem 0;
+  grid-row-gap: 6rem; }
 
 .resume__content {
   background-color: #FAFAFA;
@@ -259,17 +378,18 @@ body {
   grid-column: col-start 8 / full-end; }
 
 .contact {
-  background-color: #7B61AA;
-  grid-column: full-start / full-end; }
+  background-color: rgba(123, 97, 170, 0.7);
+  grid-column: full-start / full-end;
+  margin-bottom: 2rem; }
 
 .instagram__contact {
-  background-color: #604B88;
+  background-color: rgba(96, 75, 136, 0.5);
   grid-column: full-start / full-end;
   display: grid;
   justify-content: center; }
 
 .instagram {
-  background-color: #604B88;
+  background-color: rgba(96, 75, 136, 0.5);
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: repeat(9, 1fr);

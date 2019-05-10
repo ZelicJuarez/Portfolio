@@ -1,7 +1,29 @@
-.btn__up {
-   justify-self: end;
-   border-radius: 50%;
-   background-color: $color-main-light;
-   border: none;
-   margin-right: 5rem;
+.btn {
+  &__contact {
+    background-color: transparent;
+    border-radius: 1rem;
+    padding: 0.5rem 2.5rem;
+    border-color: $color-white;
+    border-width: 0.2rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: rgba($color-grey, 0.4);
+      transform: scale(1.1);
+    }
+  }
+
+  &__up {
+    justify-self: end;
+    border-radius: 50%;
+    background-color: $color-main-light;
+    border: none;
+    margin-right: 5rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: rgba($color-grey, 0.4);
+      transform: scale(1.5);
+    }
+  }
 }

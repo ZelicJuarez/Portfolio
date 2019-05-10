@@ -1,0 +1,32 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  padding: 2rem 0 4rem 0;
+  &__content {
+    grid-column: 1/2;
+    background-color: rgba($color-grey, 0.4);
+    padding: 6rem 3rem 2rem 22vw;
+  }
+  &__text {
+    color: $color-white;
+    text-align: center;
+  }
+  &__button-box {
+    background-color: rgba($color-secondary, 0.7);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.heading {
+  &__secondary {
+    &--contact {
+      position: absolute;
+      left: 3rem;
+      transform: skewY(-23deg);
+      top: -1.5rem;
+    }
+  }
+}
