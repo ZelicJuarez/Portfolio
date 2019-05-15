@@ -133,6 +133,12 @@ grid-row: 3/5; */
     background-color: rgba(50, 63, 75, 0.4);
     transform: scale(1.5); }
 
+.btn__resume {
+  background-color: #323F4B;
+  padding: 1rem 8rem;
+  border-radius: 1rem;
+  border-style: none; }
+
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -320,6 +326,61 @@ grid-row: 3/5; */
     top: 1.2rem;
     left: 3rem; }
 
+.resume__content {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); }
+  .resume__content--1 {
+    background-color: rgba(123, 97, 170, 0.8);
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-rows: repeat(3, min-content);
+    grid-row-gap: 2rem;
+    margin: 12rem 0 12rem 9rem;
+    z-index: 500; }
+
+.resume__text {
+  text-align: center;
+  padding: 0 5rem;
+  color: #FAFAFA; }
+
+.resume__picture {
+  position: relative; }
+
+.resume__img {
+  width: 100%;
+  position: absolute;
+  left: -12rem;
+  top: 7.5rem; }
+
+/* display: grid;
+grid-template-rows: repeat(4,1fr);
+grid-template-columns: repeat(4,1fr);
+
+////////////////////////
+
+background-color: orangered;
+grid-row: 1/5;
+grid-column: 1/5;
+display: grid;
+justify-items: center;
+grid-template-rows: repeat(3,min-content);
+align-content: center;
+grid-row-gap: 2rem;
+margin: 12rem 0 12rem 9rem;
+
+////////////////////////
+
+span
+text-align: center;
+padding: 0 5rem;
+
+button
+padding: 1rem 8rem;
+border-radius: 1rem; */
 .skills__item {
   display: grid;
   align-content: center;

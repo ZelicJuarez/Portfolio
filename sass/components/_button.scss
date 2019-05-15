@@ -26,4 +26,11 @@
       transform: scale(1.5);
     }
   }
+
+  &__resume {
+    background-color: $color-grey;
+    padding: 1rem 8rem;
+    border-radius: 1rem;
+    border-style: none;
+  }
 }
