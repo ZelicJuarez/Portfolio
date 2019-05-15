@@ -26,6 +26,12 @@
   &__pictures {
     background-color: $color-white;
     grid-column: full-start / col-end 7;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    padding: 6rem;
   }
 
   &__content {
@@ -36,6 +42,9 @@
 
 .education {
   grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content 1fr;
 }
 
 .portfolio {

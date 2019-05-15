@@ -1,20 +1,60 @@
 .education {
-    padding: 6rem 0;
-    &__title {
-        text-align: center;
-        position:relative;
-    }
+  padding: 6rem 0;
+  &__title {
+    text-align: center;
+    position: relative;
+    grid-column: 1/-1;
+  }
 
-    &__content {
-        
-    }
+  &__content {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 8vw);
+    position: relative;
+  }
+
+  &__text {
+    grid-column: 2/10;
+    z-index: 1000;
+    grid-row: 1/6;
+    display: grid;
+  }
+
+  &__sub {
+    font-weight: 1000;
+  }
+
+  &__details {
+    text-align: end;
+  }
+}
+
+.circle {
+  width: 52rem;
+  height: 52rem;
+  border-radius: 50%;
+  position: absolute;
+  &--1 {
+    background-color: rgba($color-insta, 0.5);
+    grid-column: 2/7;
+    top: -2rem;
+    left: -5rem;
+  }
+
+  &--2 {
+    background-color: $color-main;
+    grid-column: 5/10;
+    right: -5rem;
+    bottom: -4rem;
+  }
 }
 
 .heading {
-    &__secondary {
-        &--education {
-            top: 1rem;
-            left: 41.8%;
-        }
+  &__secondary {
+    &--education {
+      top: 1rem;
+      left: 41.8%;
     }
+  }
 }

@@ -88,10 +88,29 @@ body {
 .about__text {
   text-align: center; }
 
+.about__img {
+  background-color: #FAFAFA;
+  grid-column: 4 / 6;
+  grid-row: 3 / 5; }
+
+.about__img--1 {
+  width: 75%;
+  grid-row: 2 / 6;
+  grid-column: 2 / 6; }
+
+.about__img--2 {
+  width: 100%;
+  padding: 2rem; }
+
 .heading__secondary--about {
   top: 1rem;
   left: 13.2rem; }
 
+/* width: 100%;
+
+grid-column: 4 / 6;
+
+grid-row: 3/5; */
 .btn__contact {
   background-color: transparent;
   border-radius: 1rem;
@@ -142,7 +161,39 @@ body {
   padding: 6rem 0; }
   .education__title {
     text-align: center;
+    position: relative;
+    grid-column: 1/-1; }
+  .education__content {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 8vw);
     position: relative; }
+  .education__text {
+    grid-column: 2/10;
+    z-index: 1000;
+    grid-row: 1/6;
+    display: grid; }
+  .education__sub {
+    font-weight: 1000; }
+  .education__details {
+    text-align: end; }
+
+.circle {
+  width: 52rem;
+  height: 52rem;
+  border-radius: 50%;
+  position: absolute; }
+  .circle--1 {
+    background-color: rgba(96, 75, 136, 0.5);
+    grid-column: 2/7;
+    top: -2rem;
+    left: -5rem; }
+  .circle--2 {
+    background-color: #8774AA;
+    grid-column: 5/10;
+    right: -5rem;
+    bottom: -4rem; }
 
 .heading__secondary--education {
   top: 1rem;
@@ -273,6 +324,7 @@ body {
   display: grid;
   align-content: center;
   justify-content: center;
+  transition: all 0.2s;
   background-image: linear-gradient(to right bottom, #9575CD, #3F3257);
   /* &__img {
             width: 100%;
@@ -284,6 +336,8 @@ body {
     .skills__item {
       -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); } }
+  .skills__item:hover {
+    transform: scale(1.1); }
   .skills__item--1 {
     grid-row: 2/3;
     grid-column: 1 / span 2; }
@@ -347,14 +401,22 @@ body {
 
 .about__pictures {
   background-color: #FAFAFA;
-  grid-column: full-start / col-end 7; }
+  grid-column: full-start / col-end 7;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+  padding: 6rem; }
 
 .about__content {
   background-color: #FAFAFA;
   grid-column: col-start 8 / full-end; }
 
 .education {
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content 1fr; }
 
 .portfolio {
   background-color: #FAFAFA;
